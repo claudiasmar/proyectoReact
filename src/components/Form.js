@@ -4,7 +4,7 @@ class Form extends React.Component {
 
    envioFormulario = event => {
       this.props.agregarPelicula(
-        document.getElementById("nombre").value
+        event.target.nombre.value
       );
       document.getElementById("nombre").value = "";
         event.preventDefault();
